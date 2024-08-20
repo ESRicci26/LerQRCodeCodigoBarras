@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#qrImage {
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 300px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+button {
+    margin-top: 10px;
+}
+img {
+max-width: 100%;
+margin-top: 20px;
+}

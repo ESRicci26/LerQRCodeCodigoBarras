@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor e Gerador de QR Code</title>
+	<link rel="stylesheet" href="css/qrcodejs.css" />
+	<!--LEITURA E CRIAÇÃO DE QR CODE -->
+	<script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+	
+	<script src="https://unpkg.com/@zxing/library@latest"></script>
+
+</head>
+<body>
+
+    <h1>Leitor e Gerador de QR Code</h1>
+
+    <input type="file" id="fileInput" accept="image/*">
+    <button id="readQrBtn">Ler QR Code</button>
+    <br>
+
+    <textarea id="qrText" placeholder="Texto do QR Code"></textarea>
+    <button id="generateQrBtn">Gerar QR Code</button>
+
+    <canvas id="qrCanvas" style="display:none;"></canvas>
+    <img id="qrImage" alt="QR Code">
+	
+	
+	<!--LEITURA DO CÓDIGO DE BARRAS -->
+    <h1>Leitor de Código de Barras com Zxing</h1>
+
+    <input type="file" id="fileInput1" accept="image/*">
+    <button id="readBarcodeBtn">Ler Código de Barras</button>
+    <br>
+    <textarea id="barcodeText" placeholder="Numeração do Código de Barras"></textarea>
+    <img id="previewImg" alt="Preview da Imagem" />
+
+    <!-- Incluir o script Zxing para leitura de código de barras -->
+    
+	
+    <script src="js/qrcodejs.js"></script>
+
+</body>
+</html>
